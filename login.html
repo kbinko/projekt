@@ -1,89 +1,40 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://kit.fontawesome.com/b1d6f2db0f.js" crossorigin="anonymous"></script>
 
+    <title>Document</title>
 </head>
 
 <body>
-    <nav class="nav">
-        <a href="#" class="logo">
-            <img src="css.jpeg" alt="">
-            <span class="nav-item">CSS</span>
-        </a>
-        <ul class="nav-menu">
-            <li>
-                <a href="#" class="nav-link">
-                    <i class="fas fa-home"></i>
-                    <span class="nav-item">home</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">
-                    <i class="fas fa-user"></i>
-                    <span class="nav-item">Profile</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">
-                    <i class="fas fa-wallet"></i>
-                    <span class="nav-item">Wallet</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">
-                    <i class="fas fa-chart-bar"></i>
-                    <span class="nav-item">Analytics</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">
-                    <i class="fas fa-tasks"></i>
-                    <span class="nav-item">Tasks</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">
-                    <i class="fas fa-cog"></i>
-                    <span class="nav-item">Settings</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link">
-                    <i class="fas fa-question-circle"></i>
-                    <span class="nav-item">Help</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="logout">
-                    <i class="fas fa-sign-out-alt"></i>
-                    <span class="nav-item">Log out</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <div class="main">
-        <div class="content">
-            <h1>Lorem Ipsum</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
-            </p>
-        </div>
+    <div class="center">
+        <h1>Login</h1>
+        <form action="login.html" method="get">
+            <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label>password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" value="Login">
+            <div class="signup_link">
+                Not a member?<a href="#">Sign Up!</a>
+            </div>
+        </form>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
