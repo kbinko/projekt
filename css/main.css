@@ -128,10 +128,6 @@ body {
         height: 270px;
         margin-left: 0px;
     }
-    .link-nav {
-        left: 100%;
-        transition: all 0.5s ease;
-    }
     .nav li {
         margin: 16px 0;
     }
@@ -139,23 +135,8 @@ body {
         left: 0;
         background-color: #484848;
     }
-    .link-nav.active {
-        left: 0;
-    }
-    .nav-menu:nth-child(1) {
-        transition: all 0.2s;
-    }
-    .nav-menu:nth-child(2) {
-        transition: all 0.4;
-    }
-    .nav-menu:nth-child(3) {
-        transition: all 0.6;
-    }
-    .nav-menu:nth-child(4) {
-        transition: all 0.8;
-    }
-    .nav-menu:nth-child(1) {
-        transition: all 0.2s;
+    .hero.active {
+        margin-top: 50px;
     }
 }
 
@@ -172,6 +153,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s ease;
 }
 
 .hero-container {
@@ -208,25 +190,6 @@ body {
     padding: 0.7rem 0;
 }
 
-.about {
-    padding: 100px 0;
-}
-
-.about-container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
-.about-text {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .courses {
     padding: 100px 0;
 }
@@ -239,11 +202,25 @@ body {
 }
 
 .courses-text {
-    font-size: 1.2rem;
+    position: relative;
+    top: 100%;
+    font-size: 2rem;
     font-weight: 500;
     color: #333;
     text-align: center;
-    margin-bottom: 20px;
+    padding-bottom: 100px;
+}
+
+.img-text {
+    display: flex;
+    justify-content: center;
+    max-width: 100vh;
+    gap: 3rem;
+}
+
+.img-text img {
+    width: 450px;
+    height: 250px;
 }
 
 .pricing {
