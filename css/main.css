@@ -193,6 +193,7 @@ body {
 
 .courses {
     padding: 100px 0;
+    height: 100vh;
 }
 
 .courses-container {
@@ -203,13 +204,10 @@ body {
 }
 
 .courses-text {
-    position: relative;
-    top: 100%;
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 5rem;
     color: #333;
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 .img-text {
@@ -220,20 +218,71 @@ body {
 }
 
 .img-text img {
-    width: 350px;
-    height: 360px;
+    width: 330px;
+    height: 400px;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
+    cursor: pointer;
+    position: relative
 }
 
-.img-text img:hover {
-    transform: scale(1.1);
-    -webkit-filter: grayscale(100%) blur(3px);
-    filter: contrast(150%) blur(3px);
+.html-photo {
+    position: relative;
+}
+
+.html-photo::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(235, 148, 43);
+    inset: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.css-photo {
+    position: relative;
+}
+
+.css-photo::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(235, 148, 43);
+    inset: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.js-photo {
+    position: relative;
+}
+
+.js-photo::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(235, 148, 43);
+    inset: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.js-photo:hover::after {
+    opacity: 0.9;
+}
+
+.css-photo:hover::after {
+    opacity: 0.9;
+}
+
+.html-photo:hover::after {
+    opacity: 0.9;
 }
 
 .pricing {
     padding: 100px 0;
+    height: 100vh;
 }
 
 .pricing-container {
@@ -253,6 +302,7 @@ body {
 
 .community {
     padding: 100px 0;
+    height: 100vh;
 }
 
 .community-container {
@@ -272,6 +322,7 @@ body {
 
 .business {
     padding: 100px 0;
+    height: 100vh;
 }
 
 .business-container {
