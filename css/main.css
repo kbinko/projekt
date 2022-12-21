@@ -310,7 +310,8 @@ body {
     cursor: pointer;
 } */
 
-.js-photo:hover::after {
+
+/* .js-photo:hover::after {
     opacity: 0.9;
 }
 
@@ -320,7 +321,7 @@ body {
 
 .html-photo:hover::after {
     opacity: 0.9;
-}
+} */
 
 .pricing {
     padding: 100px 0;
