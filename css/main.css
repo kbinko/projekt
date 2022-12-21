@@ -215,6 +215,7 @@ body {
     justify-content: center;
     max-width: 100vh;
     gap: 4rem;
+    flex: 1 1 auto;
 }
 
 .img-text img {
@@ -226,25 +227,65 @@ body {
     position: relative
 }
 
+.img_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+    font-size: 40px;
+    opacity: 0;
+    background-color: rgb(235, 148, 43);
+    display: flex;
+    flex-direction: column;
+}
+
+.img_hover:hover {
+    opacity: 0.9;
+    z-index: 5;
+}
+
+.img_hover h1 {
+    margin: 15px 35px 0 35px;
+    font-size: 30px;
+}
+
+.img_hover p {
+    margin: 15px 35px 0 35px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.img_hover a {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    font-size: 45px;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
 .html-photo {
     position: relative;
 }
 
-.html-photo::after {
-    content: '';
-    position: absolute;
+
+/* .html-photo:hover {
     background-color: rgb(235, 148, 43);
     inset: 0;
-    opacity: 0;
+    opacity: 0.9;
     transition: all 0.5s ease;
     cursor: pointer;
-}
+} */
 
 .css-photo {
     position: relative;
 }
 
-.css-photo::after {
+
+/* .css-photo::after {
     content: '';
     position: absolute;
     background-color: rgb(235, 148, 43);
@@ -252,13 +293,14 @@ body {
     opacity: 0;
     transition: all 0.5s ease;
     cursor: pointer;
-}
+} */
 
 .js-photo {
     position: relative;
 }
 
-.js-photo::after {
+
+/* .js-photo::after {
     content: '';
     position: absolute;
     background-color: rgb(235, 148, 43);
@@ -266,7 +308,7 @@ body {
     opacity: 0;
     transition: all 0.5s ease;
     cursor: pointer;
-}
+} */
 
 .js-photo:hover::after {
     opacity: 0.9;
